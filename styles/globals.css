@@ -1,16 +1,173 @@
-html,
+@font-face {
+  font-family: 'provicali';
+  src: url(../public/Provicali.woff2);
+  font-weight: 800;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital@0;&display=swap');
+
+:root {
+  --yellow: #F6A133;
+  --light-yellow: #F8E1C4;
+  --blue: #51A8B1;
+  --light-blue: #A9DFE4;
+  --green: #0D3134;
+  --dark-green: #151D1C;
+}
+
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Averia Serif Libre', Baskerville, serif;
+  color: var(--yellow);
+  background-color: var(--light-yellow);
 }
 
 a {
-  color: inherit;
+  color: var(--yellow);
   text-decoration: none;
 }
 
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'provicali';
+  letter-spacing: 2px;
+  font-size: 7vw;
+  line-height: 1;
+  margin: 0 0 0 0 ;
+  margin-top: 20px;
+}
+
+h2{
+  font-family: 'provicali';
+  letter-spacing: 2px;
+  font-size: 4em;
+  line-height: .8;
+  margin: 0 0 0 0 ;
+}
+
+h3{
+  font-family: 'provicali';
+  letter-spacing: 2px;
+  font-size: 2em;
+  line-height: .8;
+  margin: 0 0 0 0 ;
+}
+
+main {
+  background-color: var(--light-yellow);
+  color: var(--green);
+  width: 70vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  padding-bottom: 60px;
+  align-items: center;
+  align-content: center;
+}
+
+footer{
+  min-height: 200px;;
+  background-color: var(--dark-green);
+  width: 100%;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+
+.page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navBar {
+  position: sticky;
+  top: 0;
+   display: flex;
+  flex-direction: row;
+  width:100%;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 200;
+  background-color: var(--light-yellow);
+
+}
+
+.navLogoLink {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Provicali';
+  font-size: 2rem;
+  color: var(--green);
+  line-height: 0;
+}
+
+.navText{
+  margin-left: 20px;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+}
+
+.heroText{
+  margin-left: 20px;
+}
+
+.heroLogo{
+  margin-right: 10px;
+}
+
+.what{
+  background-color: var(--yellow);
+  color: var(--green);
+  width: 100%;
+  padding: 40px;
+}
+
+.who{
+  background-color: var(--blue);
+  color: var(--green);
+  width: 100%;
+  padding: 40px;
+}
+
+.getStarted{
+  background-color: var(--green);
+  color: var(--yellow);
+  width: 100%;
+  padding: 40px;
+}
+
+.aboutImage{
+  border-radius: 100px;
+}
+
+.aboutContainer{
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.abouts{
+  width: 100%;
+  max-width: 1000px;
 }
