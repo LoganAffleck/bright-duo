@@ -35,7 +35,7 @@ a {
 h1 {
   font-family: 'provicali';
   letter-spacing: 2px;
-  font-size: 7vw;
+  font-size: 70px;
   line-height: 1;
   margin: 0 0 0 0 ;
   margin-top: 20px;
@@ -47,6 +47,8 @@ h2{
   font-size: 4em;
   line-height: .8;
   margin: 0 0 0 0 ;
+  width: 100%;
+  max-width: 700px;
 }
 
 h3{
@@ -60,7 +62,9 @@ h3{
 main {
   background-color: var(--light-yellow);
   color: var(--green);
-  width: 70vw;
+  width: 100%;
+  height: 70vh;
+  max-width: 700px;
   display: flex;
   justify-content: space-between;
   padding: 40px;
@@ -131,17 +135,62 @@ form{
 }
 
 .what{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--yellow);
   color: var(--green);
   width: 100%;
   padding: 40px;
 }
 
+.whatContainer{
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+  max-width: 700px;
+}
+
+.whatText{
+  max-width: 45%;
+}
+
+.whatLinks{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  justify-content: space-between;
+}
+
+.portfolioLink{
+  cursor: pointer;
+  height: 50%;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: var(--blue);
+}
+
+.reviewsLink{
+  cursor: pointer;
+  height: 40%;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: var(--green);
+  color: var(--yellow)
+}
+
 .who{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--blue);
   color: var(--green);
   width: 100%;
   padding: 40px;
+}
+
+.whoTitle{
+  text-align: end;
 }
 
 .getStarted{
@@ -157,17 +206,23 @@ form{
 
 .aboutContainer{
   display: flex;
-  width: 90%;
+  width: 100%;
   justify-content: space-between;
+  border: .5px solid var(--green);
 }
+
 .about{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 40px;
+  border: .5px solid var(--green);
 }
 
 .abouts{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  max-width: 1000px;
+  max-width: 700px;
+  border: .5px solid var(--green);
 }
